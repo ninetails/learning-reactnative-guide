@@ -4,13 +4,7 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React from 'react';
 import Home from './components/Home/Home.component';
 
-export default class App extends Component {
-  render() {
-    return (
-      <Home />
-    );
-  }
-}
+export default () => (<Home />);
