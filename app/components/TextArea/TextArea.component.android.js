@@ -8,13 +8,15 @@ export default class TextArea extends Component {
   }
   render() {
     const { style, ...extraProps } = this.props;
+    const alignTextTop = { textAlignVertical: 'top' };
     return (
       <TextInput
         {...extraProps}
-        style={[styles.textArea, style]}
+        style={[styles.textArea, alignTextTop, style]}
         multiline={true}
         onChangeText={(text) => this.setState({ text })}
         value={this.state.text}
+        underlineColorAndroid={'transparent'}
       />
     );
   }
