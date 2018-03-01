@@ -6,15 +6,25 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "ios": "react-native run-ios",
-    "android": "cd android && ./gradlew clean && cd .. && react-native run-android"
+    "android": "cd android && ./gradlew clean && cd .. && react-native run-android",
+    "lint": "eslint app/",
+    "lint:fix": "eslint app/ --fix"
   },
   "dependencies": {
+    "prop-types": "^15.6.1",
     "react": "16.2.0",
     "react-native": "0.53.3"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.2",
     "babel-jest": "22.4.1",
     "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
     "jest": "22.4.2",
     "react-test-renderer": "16.2.0"
   },

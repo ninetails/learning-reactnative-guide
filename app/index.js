@@ -7,4 +7,8 @@
 import React from 'react';
 import Home from './components/Home/Home.component';
 
-export default () => (<Home />);
+const App = () => (<Home />);
+
+App.displayName = 'App';
+
+export default App;
